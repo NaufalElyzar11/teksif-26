@@ -1,0 +1,54 @@
+<div id="shower-c2-viewer">
+  <div class="viz-row sc-heading">
+    <strong>Shower adaptif · C2</strong>
+    <span class="text-small text-muted">Model konsep 3D</span>
+  </div>
+  <div class="viz-row sc-primary" aria-label="Kontrol mekanisme">
+    <button type="button" class="btn" id="sc-water" aria-pressed="false">AIR: mati</button>
+    <button type="button" class="btn" id="sc-soap" aria-pressed="false">SABUN: tutup</button>
+    <span id="sc-mode" aria-live="polite">MATI</span>
+  </div>
+  <div id="sc-canvas-wrap">
+    <canvas id="sc-canvas" role="img" aria-label="Model 3D shower adaptif dengan dua kontrol, kartrid lepas, pipa panjang dan pencampur Venturi. Geser untuk memutar dan gulir untuk memperbesar.">Model 3D memerlukan WebGL.</canvas>
+    <div id="sc-loading" class="text-small">Memuat model 3D…</div>
+    <div id="sc-label" class="text-small" hidden></div>
+  </div>
+  <div class="viz-row sc-cameras" aria-label="Sudut pandang">
+    <button type="button" class="btn" id="sc-full">Utuh</button>
+    <button type="button" class="btn" id="sc-handle">Gagang</button>
+    <button type="button" class="btn" id="sc-venturi">Venturi</button>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="sc-cutaway"><span class="form-check-label">Bagian dalam</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="sc-flow" checked><span class="form-check-label">Aliran skematis</span></label>
+  </div>
+  <div class="viz-controls sc-secondary">
+    <label class="form-label" for="sc-explode">Urai komponen <span id="sc-explode-value" class="tabular-nums">0%</span><input class="form-range" id="sc-explode" type="range" min="0" max="100" step="1" value="0"></label>
+    <label class="form-label" for="sc-part">Periksa bagian<select class="form-select" id="sc-part"><option value="">Pilih komponen</option></select></label>
+  </div>
+  <div class="viz-row sc-service">
+    <button type="button" class="btn" id="sc-cartridge" aria-pressed="false">Lepas kartrid</button>
+    <button type="button" class="btn" id="sc-cap" aria-pressed="false">Buka tutup isi ulang</button>
+    <button type="button" class="btn" id="sc-reset">Rakit kembali</button>
+  </div>
+  <div id="sc-detail" class="text-small" aria-live="polite">Putar: geser. Perbesar: gulir atau cubit. Klik paddle untuk mencoba kontrol.</div>
+  <div class="text-small text-muted sc-limit">Gerak kontrol ilustratif; bukan uji tekanan, dosis, atau CFD. Ukuran belum untuk fabrikasi.</div>
+</div>
+<style>
+#shower-c2-viewer { color: var(--foreground); background: transparent; width:100%; }
+#shower-c2-viewer .sc-heading { justify-content:flex-start; padding-bottom:10px; padding-right:100px; }
+#shower-c2-viewer .sc-primary { justify-content:flex-start; padding-bottom:8px; }
+#shower-c2-viewer #sc-mode { margin-left:auto; }
+#shower-c2-viewer #sc-canvas-wrap { position:relative; width:100%; height:440px; overflow:hidden; }
+#shower-c2-viewer #sc-canvas { display:block; width:100%; height:100%; touch-action:none; cursor:grab; }
+#shower-c2-viewer #sc-canvas:active { cursor:grabbing; }
+#shower-c2-viewer #sc-loading { position:absolute; inset:45% 0 auto 0; text-align:center; color:var(--muted-foreground); pointer-events:none; }
+#shower-c2-viewer #sc-label { position:absolute; padding:5px 8px; color:var(--popover-foreground); background:var(--popover); border:1px solid var(--border); border-radius:5px; pointer-events:none; max-width:220px; }
+#shower-c2-viewer .sc-cameras { justify-content:flex-start; padding-top:8px; }
+#shower-c2-viewer .sc-secondary { margin-top:12px; }
+#shower-c2-viewer .sc-service { justify-content:flex-start; margin-top:8px; }
+#shower-c2-viewer #sc-detail { margin-top:10px; min-height:2.5em; }
+#shower-c2-viewer .sc-limit { margin-top:6px; }
+@media (max-width:480px) { #shower-c2-viewer #sc-canvas-wrap { height:350px; } #shower-c2-viewer #sc-mode { margin-left:0; } }
+</style>
+<script>
+/*__SHOWER_BUNDLE__*/
+</script>

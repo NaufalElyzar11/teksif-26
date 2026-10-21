@@ -1,0 +1,231 @@
+{
+  "sourceUnits": "millimetres",
+  "dimensions": {
+    "units": "mm",
+    "handleLength": 190,
+    "handleWidth": 42,
+    "handleDepth": 45,
+    "pipeVisualLength": 520,
+    "estimatedPodVolumeMl": 30,
+    "status": "Konsep; pipa 520 mm hanya representasi, bukan ukuran unit asli."
+  },
+  "parts": [
+    {
+      "id": "casing-kiri",
+      "label": "Casing PETG kiri",
+      "category": "casing",
+      "description": "Selubung nominal dinding 3 mm. Bukan rumah saluran bertekanan.",
+      "objectName": "casing-kiri"
+    },
+    {
+      "id": "casing-kanan",
+      "label": "Casing PETG kanan",
+      "category": "casing",
+      "description": "Belahan selubung dapat dibuka untuk servis dan melihat mekanisme.",
+      "objectName": "casing-kanan"
+    },
+    {
+      "id": "grip-lepas",
+      "label": "Grip lunak lepas",
+      "category": "casing",
+      "description": "Lapisan genggam konseptual; bentuk dan ukurannya perlu uji tangan basah.",
+      "objectName": "grip-lepas"
+    },
+    {
+      "id": "rangka-internal",
+      "label": "Rangka penahan modul",
+      "category": "internal",
+      "description": "Dudukan struktural ilustratif; jangan mengganti rumah katup komersial dengan cetakan.",
+      "objectName": "rangka-internal"
+    },
+    {
+      "id": "jalur-air-gagang",
+      "label": "Jalur air dalam gagang",
+      "category": "air",
+      "description": "Selang dan fitting air komersial terpisah dari casing PETG.",
+      "objectName": "jalur-air-gagang"
+    },
+    {
+      "id": "rumah-katup-air",
+      "label": "Rumah modul katup air",
+      "category": "air",
+      "description": "Representasi modul lengkap berperingkat yang belum dipilih. Geometri ini bukan desain katup produksi.",
+      "objectName": "rumah-katup-air"
+    },
+    {
+      "id": "seal-katup-air",
+      "label": "Seal katup air (skema)",
+      "category": "air",
+      "description": "Seal terpisah di sekitar inti. Jenis seal dan tekanan operasi belum ditetapkan.",
+      "objectName": "seal-katup-air"
+    },
+    {
+      "id": "inti-katup-air",
+      "label": "Inti katup air bergerak",
+      "category": "mekanisme",
+      "description": "Lubang inti sejajar jalur air saat buka; berputar menutup saat OFF. Ilustrasi keadaan katup.",
+      "objectName": "inti-katup-air"
+    },
+    {
+      "id": "paddle-air",
+      "label": "Paddle AIR",
+      "category": "kontrol",
+      "description": "Tekan sekali untuk buka/tutup. Bentuk latch dan gaya komponen nyata belum dipilih.",
+      "objectName": "paddle-air"
+    },
+    {
+      "id": "penghubung-air",
+      "label": "Penghubung paddle air (skema)",
+      "category": "mekanisme",
+      "description": "Penghubung gerak ilustratif. Kinematika latch produksi belum direkayasa.",
+      "objectName": "penghubung-air"
+    },
+    {
+      "id": "rumah-katup-sabun",
+      "label": "Katup jalur isap sabun",
+      "category": "sabun",
+      "description": "Katup rapat udara untuk memilih SABUN/BILAS, bukan pompa takar.",
+      "objectName": "rumah-katup-sabun"
+    },
+    {
+      "id": "inti-katup-sabun",
+      "label": "Inti katup isap bergerak",
+      "category": "mekanisme",
+      "description": "Lubang sejajar saat mode SABUN; tertutup saat BILAS.",
+      "objectName": "inti-katup-sabun"
+    },
+    {
+      "id": "paddle-sabun",
+      "label": "Paddle SABUN/BILAS",
+      "category": "kontrol",
+      "description": "Pemilih dua keadaan menetap; tidak perlu ditahan. BILAS tidak langsung bebas sisa sabun.",
+      "objectName": "paddle-sabun"
+    },
+    {
+      "id": "penghubung-sabun",
+      "label": "Penghubung paddle sabun (skema)",
+      "category": "mekanisme",
+      "description": "Aktuator mengubah keadaan katup isap; tidak mendorong piston sabun.",
+      "objectName": "penghubung-sabun"
+    },
+    {
+      "id": "dudukan-pod",
+      "label": "Dudukan kartrid samping",
+      "category": "casing",
+      "description": "Kartrid lepas dari samping tanpa membuka sambungan air.",
+      "objectName": "dudukan-pod"
+    },
+    {
+      "id": "kartrid-sabun",
+      "label": "Kartrid sabun lepas (~30 mL)",
+      "category": "sabun",
+      "description": "Volume luar hanya ilustrasi. Kartrid kaku memerlukan vent; pickup dan ketahanan saat dimiringkan belum dibuktikan.",
+      "objectName": "kartrid-sabun"
+    },
+    {
+      "id": "tutup-kartrid",
+      "label": "Tutup isi ulang + vent",
+      "category": "sabun",
+      "description": "Tutup dan vent terlindung merupakan konsep; prosedur pembersihan dan anti-tumpah perlu dirancang.",
+      "objectName": "tutup-kartrid"
+    },
+    {
+      "id": "jalur-pod-ke-katup",
+      "label": "Jalur kartrid ke pemilih",
+      "category": "sabun",
+      "description": "Sambungan konsep dengan jalur isap; tidak menghubungkan air bertekanan ke kartrid.",
+      "objectName": "jalur-pod-ke-katup"
+    },
+    {
+      "id": "selang-hisap-panjang",
+      "label": "Selang hisap sabun eksternal",
+      "category": "sabun",
+      "description": "Panjang dan kekentalan meningkatkan hambatan. Uji seluruh rute, beda tinggi, priming, dan jeda bilas.",
+      "objectName": "selang-hisap-panjang"
+    },
+    {
+      "id": "fitting-masuk",
+      "label": "Fitting masuk selang air",
+      "category": "air",
+      "description": "Fitting dan selang berperingkat perlu cocok dengan pasokan keran.",
+      "objectName": "fitting-masuk"
+    },
+    {
+      "id": "selang-air",
+      "label": "Selang dari keran",
+      "category": "air",
+      "description": "Perlindungan aliran balik sesuai injeksi sabun wajib berada di sumber; tidak divisualisasikan sebagai check valve kecil di gagang.",
+      "objectName": "selang-air"
+    },
+    {
+      "id": "pipa-asli",
+      "label": "Pipa atas asli - ukuran representatif",
+      "category": "air",
+      "description": "Pipa visual 520 mm; ukuran asli dan rating sambungan belum diukur. Panjang asli dipertahankan pada desain final.",
+      "objectName": "pipa-asli"
+    },
+    {
+      "id": "sambungan-pipa",
+      "label": "Sambungan/teleskop pipa",
+      "category": "air",
+      "description": "Detail sambungan representatif; ulir dan ukuran perlu diukur.",
+      "objectName": "sambungan-pipa"
+    },
+    {
+      "id": "klip-selang",
+      "label": "Klip selang sepanjang batang",
+      "category": "casing",
+      "description": "Klip menghindari loop longgar. Bentuk dan jepitan perlu diuji pada batang asli.",
+      "objectName": "klip-selang"
+    },
+    {
+      "id": "venturi-belakang",
+      "label": "Venturi - separuh belakang",
+      "category": "campuran",
+      "description": "Penampang fungsi konvergen/leher/difuser. Dimensi bukan desain fluida atau komponen terpilih.",
+      "objectName": "venturi-belakang"
+    },
+    {
+      "id": "venturi-depan",
+      "label": "Venturi - penutup depan",
+      "category": "campuran",
+      "description": "Dibuka pada mode potong untuk melihat prinsip pencampuran; gunakan injektor komersial untuk prototipe.",
+      "objectName": "venturi-depan"
+    },
+    {
+      "id": "port-isap-venturi",
+      "label": "Port isap + check valve",
+      "category": "campuran",
+      "description": "Katup satu arah melindungi jalur kartrid. Ini bukan pengganti perlindungan sumber air.",
+      "objectName": "port-isap-venturi"
+    },
+    {
+      "id": "leher-outlet",
+      "label": "Leher outlet campuran",
+      "category": "campuran",
+      "description": "Jalur campuran sesudah Venturi dibuat pendek. Nozel asli bersyarat terhadap tekanan balik.",
+      "objectName": "leher-outlet"
+    },
+    {
+      "id": "kepala-pancuran",
+      "label": "Outlet pancuran campuran",
+      "category": "campuran",
+      "description": "Outlet lembut representatif; luas lubang dan tekanan balik mengikuti komponen Venturi yang dipilih.",
+      "objectName": "kepala-pancuran"
+    },
+    {
+      "id": "lubang-pancuran",
+      "label": "Lubang muka pancuran (ilustrasi)",
+      "category": "campuran",
+      "description": "Titik lubang hanya petunjuk visual. Pola, debit, dan kenyamanan belum diuji.",
+      "objectName": "lubang-pancuran"
+    },
+    {
+      "id": "spons-lepas",
+      "label": "Spons lepas di sekitar kepala",
+      "category": "casing",
+      "description": "Tidak menutup muka semprot. Tambahan massa spons basah di ujung memengaruhi pergelangan.",
+      "objectName": "spons-lepas"
+    }
+  ]
+}
